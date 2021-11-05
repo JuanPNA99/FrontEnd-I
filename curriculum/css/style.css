@@ -1,27 +1,41 @@
+.headerItems {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 300px;
+	background-image: url('https://cincodias.elpais.com/cincodias/imagenes/2017/03/03/lifestyle/1488549168_134481_1488550313_noticia_grande.jpg');
+	background-size: 100% 300px;
+	justify-content: center;
+}
+
 .title {
-	font-family: 'Times New Roman';
+	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
+	margin-top: 70px;
 	font-size: 35px;
+	width: 100%;
 	line-height: 30px;
 	color: #005677;
 	background-color: #c4c4c4;
 }
 
 .whiteSpace {
+	height: 100px;
 }
 
 .subTitle {
-	font-family: 'Times New Roman';
+	font-family: Arial, Helvetica, sans-serif;
 	text-align: start;
 	font-size: 20px;
 	line-height: 16px;
 	color: #005677;
 	background-color: #c4c4c4;
+	line-height: 40px;
 }
 
 .listTitle {
 	display: inline;
-	font-family: 'Times New Roman';
+	font-family: Arial, Helvetica, sans-serif;
 	text-align: start;
 	font-size: 15px;
 	font-style: italic;
@@ -30,8 +44,32 @@
 
 .listItem {
 	display: inline;
-	font-family: 'Times New Roman';
+	font-family: Arial, Helvetica, sans-serif;
 	text-align: start;
 	font-size: 15px;
 	font-style: italic;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 98.5%;
+	height: 2.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #005677;
+}
+
+.footerText {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 16.5px;
+}
+
+.fab {
+	color: white;
+	margin-left: -50px;
+	margin-right: -40px;
 }
