@@ -1,0 +1,210 @@
+* {
+	margin: 0;
+}
+
+header {
+	display: sticky;
+}
+.headerFirstLine {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	height: 20px;
+	background-color: #222222;
+}
+
+.headerFirstText {
+	display: flex;
+	flex-direction: row;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: white;
+	box-sizing: border-box;
+	padding-left: 2vw;
+}
+
+.firstLineSelects {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding-right: 5vw;
+}
+
+.headerSelects {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 0;
+	border: transparent;
+	background-color: transparent;
+	color: #f3f3f3;
+}
+
+.headerLabelsOptions {
+	color: black;
+}
+
+.headerSecondLine {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 90px;
+	background-color: #f0a83e;
+}
+
+.secondLineTitle {
+	display: flex;
+	flex-direction: row;
+}
+
+.headerTitleFront {
+	display: flex;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #3c2313;
+	margin-left: 5vw;
+}
+
+.headerTitleCat {
+	display: flex;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+}
+
+.headerNavbar {
+	display: flex;
+	flex-direction: row;
+	margin-right: 5vw;
+}
+
+.headerUL {
+	display: flex;
+	flex-direction: row;
+}
+
+.headerLi {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 10px;
+}
+
+.categoriesButton {
+	color: #ffffff;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.navbarA {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.myPawIcon {
+	color: #ffffff;
+	margin: 3px;
+}
+
+.mainBannerPlaceholder {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 100%;
+	min-height: 400px;
+	height: auto;
+	justify-content: flex-start;
+	align-items: center;
+	background-image: url('../src/img/petFood.jpg');
+	background-size: 100% 100%;
+	margin-bottom: 30px;
+}
+
+.bannerContent {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.bannerTitle {
+	display: flex;
+	margin: 0.5vw;
+	color: #3c2313;
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.bannerSubtitle {
+	display: flex;
+	margin: 0.5vw;
+	color: #3c2313;
+	background-color: transparent;
+	border-radius: 5px;
+}
+
+.bannerButton {
+	display: flex;
+	width: 35%;
+	height: 40px;
+	margin: 5px;
+	color: white;
+	background-color: #f0a83e;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+}
+
+.mainContent {
+	display: flex;
+	width: 100%;
+	height: auto;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.myPawIconMain {
+	display: flex;
+	color: #f0a83e;
+	margin-bottom: 10px;
+}
+
+.mainTitle {
+	display: flex;
+	margin-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #3c2313;
+}
+
+.mainUl {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.mainLi {
+	display: flex;
+	align-items: center;
+	margin: 5px;
+}
+
+.mainUlA {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #666666;
+}
