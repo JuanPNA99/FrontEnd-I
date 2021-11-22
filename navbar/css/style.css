@@ -1,0 +1,22 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+header {
+	display: flex;
+	justify-self: center;
+	height: 60px;
+	background-color: white;
+}
+
+body {
+	background-color: blanchedalmond;
+}
+
+.ulClass {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	list-style-type: none;
+}

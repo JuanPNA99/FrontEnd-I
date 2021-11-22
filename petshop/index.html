@@ -4,7 +4,19 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Petshop</title>
 	</head>
@@ -25,16 +37,22 @@
 			</div>
 			<div class="headerSecondLine">
 				<div class="secondLineTitle">
-					<h2 class="headerTitleFront"><i class="myDogIcon fas fa-dog"></i>Front</h2>
-					<h2 class="headerTitleCat">Cat&Dog<i class="myCatIcon fas fa-cat"></i></h2>
+					<h2 class="headerTitleFront">
+						<img src="src/img/Cat.svg" alt="Cat" />Front
+					</h2>
+					<h2 class="headerTitleCat">
+						Cat&Dog <img src="src/img/Dog.svg" alt="Dog" />
+					</h2>
+					<!-- Iconos que usaba por que no sabia como sacar los svg del figma -->
+					<!-- <i class="myDogIcon fas fa-dog"></i> -->
+					<!-- <i class="myCatIcon fas fa-cat"></i> -->
 				</div>
 				<nav class="headerNavbar">
 					<ul class="headerUL">
 						<li class="headerLi">
-							<i class=" myPawIcon fas fa-paw"></i>
-							<button class="categoriesButton">
-								</i>Categorias
-							</button>
+							<i class="myPawIcon fas fa-paw"></i>
+
+							<button class="categoriesButton">Categorias</button>
 						</li>
 						<li class="headerLi">
 							<i class="myPawIcon fas fa-paw"></i>
@@ -42,15 +60,11 @@
 						</li>
 						<li class="headerLi">
 							<i class="myPawIcon fas fa-paw"></i>
-							<a class="navbarA" href="#"
-								>Nosotros</a
-							>
+							<a class="navbarA" href="#">Nosotros</a>
 						</li>
 						<li class="headerLi">
 							<i class="myPawIcon fas fa-paw"></i>
-							<a class="navbarA" href="#"
-								>Contactanos</a
-							>
+							<a class="navbarA" href="#">Contactanos</a>
 						</li>
 					</ul>
 				</nav>
@@ -63,19 +77,66 @@
 					<h3 class="bannerSubtitle">¡Comederos en descuento!</h3>
 					<button class="bannerButton">COMEDEROS</button>
 				</div>
-			</div>	
+			</div>
 			<div class="mainContent">
 				<i class="myPawIconMain fas fa-paw fa-5x"></i>
 				<h1 class="mainTitle">Productos Destacados</h1>
 				<ul class="mainUl">
-					<li class="mainLi"><a class="mainUlA" href=""> Comederos</a></li>
+					<li class="mainLi">
+						<a class="mainUlA" href=""> Comederos</a>
+					</li>
 					<li class="mainLi">-</li>
-					<li class="mainLi"><a class="mainUlA" href=""> Accesorios</a></li>
+					<li class="mainLi">
+						<a class="mainUlA" href=""> Accesorios</a>
+					</li>
 					<li class="mainLi">-</li>
-					<li class="mainLi"><a class="mainUlA" href=""> Comida</a></li>
+					<li class="mainLi">
+						<a class="mainUlA" href=""> Comida</a>
+					</li>
 				</ul>
 			</div>
+			<section class="cardsContainer">
+				<div class="card">
+					<img src="src/img/foodItem1.png" alt="foodItem" />
+					<span class="cardSpan">Juguete churrasquito</span>
+					<span class="cardSpanPrice">$150</span>
+				</div>
+				<div class="card">
+					<img src="src/img/foodItem2.png" alt="foodItem" />
+					<span class="cardSpan">Comedero para perro</span>
+					<span class="cardSpanPrice">$250</span>
+				</div>
+				<div class="card">
+					<img src="src/img/foodItem3.png" alt="foodItem" />
+					<span class="cardSpan">Juguete huesito</span>
+					<span class="cardSpanPrice">$650</span>
+				</div>
+			</section>
 		</main>
-		<footer></footer>
+		<footer>
+			<section class="subscribe">
+				<div class="subscribeBoxLeft">
+					<img
+						src="src/img//enviar-correo 1.svg"
+						alt="mail.sgv"
+					/><span class="subscribeSpan"
+						>Suscríbete para más novedades</span
+					>
+				</div>
+				<div class="subscribeBoxRight">
+					<input
+						class="subscribeInput"
+						type="text"
+						placeholder="Ingresá tu correo electronico"
+					/><button class="subscribeButton">Suscribirme</button>
+				</div>
+			</section>
+			<section class="info"></section>
+			<section class="allRightsReserved">
+				<span class="rightsText"
+					>Todos los derechos reservados FrontEnd</span
+				>
+			</section>
+		</footer>
 	</body>
 </html>
