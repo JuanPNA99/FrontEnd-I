@@ -245,6 +245,75 @@ header {
 	align-items: center;
 	color: #f0a83e;
 }
+.contactFormContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.contactForm {
+	display: flex;
+	margin: 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50vw;
+	height: auto;
+	margin-bottom: 100px;
+}
+
+.contactFormLegend {
+	font-size: 2rem;
+	color: #3c2313;
+	margin-bottom: 20px;
+}
+
+.contactFormLabels {
+	width: 60%;
+	margin-bottom: 10px;
+}
+
+.contactFormInputs {
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	border: none;
+	border-radius: 18px;
+	background-color: #3c2313;
+	color: #ffffff;
+}
+
+.contactFormInputs::placeholder {
+	color: #ffffff;
+}
+
+.contactFormButtonsContainer {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	width: 100%;
+}
+.contactFormLeftButton {
+	font-size: 1.1rem;
+	background-color: #8a8787;
+	color: #ffffff;
+	border: none;
+	height: 35px;
+	width: 20%;
+	border-radius: 15px;
+	margin-right: 10px;
+}
+
+.contactFormRightButton {
+	font-size: 1.1rem;
+	background-color: #f0a83e;
+	color: #ffffff;
+	border: none;
+	height: 35px;
+	width: 20%;
+	border-radius: 15px;
+	margin-right: 10px;
+}
 
 footer {
 	display: flex;
@@ -304,6 +373,52 @@ footer {
 	border-radius: 25px;
 }
 
+.info {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: auto;
+	align-items: row;
+	background-color: #3c2313;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 100px;
+}
+
+.infoLinksContainer {
+	display: grid;
+	grid-template-columns: 0.6fr 1fr;
+	grid-template-rows: 3fr 3fr 3fr;
+	grid-row-gap: 20px;
+}
+
+.infoSubTitle {
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.infoSpan {
+	color: #8a8787;
+	font-size: 15px;
+}
+
+.infoTitleContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.infoTitleFront {
+	display: flex;
+	color: #ffffff;
+	margin-left: 5vw;
+}
+
+.infoTitleCat {
+	display: flex;
+	color: #f0a83e;
+}
+
 .allRightsReserved {
 	display: flex;
 	align-items: center;
@@ -314,4 +429,113 @@ footer {
 
 .rightsText {
 	color: white;
+}
+
+@media (max-width: 768px) {
+	.headerFirstLine {
+		display: none;
+	}
+
+	.headerNavbar {
+		display: none;
+	}
+
+	.bannerContent {
+		width: 100%;
+		align-items: flex-end;
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+
+	.bannerTitle {
+		font-size: 1.4rem;
+	}
+
+	.bannerButton {
+		font-size: 0.8rem;
+	}
+
+	.mainTitle {
+		text-align: center;
+	}
+
+	.mainUlA {
+		font-size: 1rem;
+	}
+
+	.cardsContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.card {
+		width: 70%;
+		margin-bottom: 20px;
+	}
+
+	.contactForm {
+		width: 80vw;
+	}
+
+	.contactFormLabels {
+		width: 100%;
+	}
+
+	.contactFormLeftButton {
+		width: 50%;
+	}
+
+	.contactFormRightButton {
+		width: 50%;
+	}
+	.subscribe {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.subscribeBoxLeft {
+		width: 100%;
+		font-size: 1.1rem;
+		margin-bottom: 10px;
+		padding-left: 15px;
+	}
+
+	.subscribeBoxRight {
+		align-items: flex-end;
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.subscribeInput {
+		width: 70%;
+	}
+
+	.subscribeButton {
+		width: 30%;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.infoTitleContainer {
+		margin-bottom: 20px;
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+	.bannerContent {
+		width: 50%;
+	}
+
+	.card {
+		width: 50%;
+	}
+
+	.subscribeButton {
+		width: 20%;
+	}
 }
