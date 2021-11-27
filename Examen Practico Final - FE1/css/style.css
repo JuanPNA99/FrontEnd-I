@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Be Vietnam Pro', sans-serif;
+}
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	background: transparent;
+}
+
+.headerUl {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+}
+
+.headerUlA {
+	color: #242e52;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.headerLi {
+	padding: 10px;
+}
+
+.getStartedButton {
+	width: 150px;
+	height: 50px;
+	color: #ffffff;
+	background-color: #f3603b;
+	border: none;
+	border-radius: 40px;
+}
+
+main {
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-bottom: 200px;
+}
+
+.SectionOneTwo {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+
+.mainTitle {
+	color: #232c50;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.mainLeftTexts {
+	margin-bottom: 20px;
+	font-size: 1rem;
+}
+
+.mainSubtitle {
+	color: #232c50;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.littleTitles {
+	color: #232c50;
+}
+
+.rightText {
+	color: #b3b2b7;
+}
+
+.cardsSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.footerFirstSection {
+	background-color: #f3613c;
+	padding: 0;
+	height: 100px;
+}
+
+.footerSecondSection {
+	background-color: #1e1e26;
+	padding: 0;
+	height: 100px;
+}

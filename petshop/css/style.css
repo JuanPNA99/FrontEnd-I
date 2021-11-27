@@ -73,6 +73,10 @@ header {
 	color: #ffffff;
 }
 
+.hamburgerNav {
+	display: none;
+}
+
 .headerNavbar {
 	display: flex;
 	flex-direction: row;
@@ -436,6 +440,15 @@ footer {
 		display: none;
 	}
 
+	.hamburgerNav {
+		display: flex;
+		margin-right: 10vw;
+	}
+
+	.hamburgerIcon {
+		color: #ffffff;
+	}
+
 	.headerNavbar {
 		display: none;
 	}
@@ -531,8 +544,12 @@ footer {
 		width: 50%;
 	}
 
+	.hamburgerNav {
+		display: none;
+	}
+
 	.card {
-		width: 50%;
+		width: 30%;
 	}
 
 	.subscribeButton {
