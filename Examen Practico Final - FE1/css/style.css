@@ -10,7 +10,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 	padding-left: 10vw;
 	padding-right: 10vw;
 	background: transparent;
@@ -59,6 +59,7 @@ main {
 	color: #232c50;
 	font-size: 3rem;
 	font-weight: bold;
+	margin-bottom: 20px;
 }
 
 .mainLeftTexts {
@@ -70,14 +71,52 @@ main {
 	color: #232c50;
 	font-size: 2rem;
 	font-weight: bold;
+	margin-bottom: 20px;
 }
 
 .littleTitles {
 	color: #232c50;
+	margin-bottom: 20px;
+	margin-top: 40px;
+	text-align: initial;
+}
+
+.littleTitlesOne::before {
+	content: '01';
+	position: relative;
+	padding: 5px 20px;
+	color: #ffffff;
+	margin-right: 0.5vw;
+	background-color: #f3603b;
+	border: none;
+	border-radius: 30px;
+}
+
+.littleTitlesTwo::before {
+	content: '02';
+	position: relative;
+	padding: 5px 20px;
+	color: #ffffff;
+	margin-right: 0.5vw;
+	background-color: #f3603b;
+	border: none;
+	border-radius: 30px;
+}
+
+.littleTitlesThree::before {
+	content: '03';
+	position: relative;
+	padding: 5px 20px;
+	color: #ffffff;
+	margin-right: 0.5vw;
+	background-color: #f3603b;
+	border: none;
+	border-radius: 30px;
 }
 
 .rightText {
 	color: #b3b2b7;
+	margin-left: 4vw;
 }
 
 .cardsSection {
@@ -87,14 +126,135 @@ main {
 	justify-content: flex-start;
 }
 
+.cardsContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 100px 0px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0 2vw;
+	background-color: #fafafa;
+}
+
+.cardAvatar {
+	position: relative;
+	width: 80px;
+	height: auto;
+	border-radius: 50px;
+	bottom: 40px;
+}
+
+.cardUserName {
+	color: #242e53;
+}
+
+.cardText {
+	margin-top: 20px;
+	margin-bottom: 25px;
+	text-align: center;
+	color: #b9b9c1;
+}
+
 .footerFirstSection {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 	background-color: #f3613c;
-	padding: 0;
-	height: 100px;
+	padding: 50px 100px;
+	height: auto;
+}
+
+.footerFirstSectionTitle {
+	color: #ffffff;
+	font-size: 2rem;
+}
+
+.invertedGetStartedButton {
+	width: 150px;
+	height: 50px;
+	color: #f3603b;
+	background-color: #ffffff;
+	border: none;
+	border-radius: 40px;
 }
 
 .footerSecondSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
 	background-color: #1e1e26;
-	padding: 0;
-	height: 100px;
+	padding: 50px 100px;
+	height: auto;
+}
+
+.footerSecondSectionSocialNetworksContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.footerSecondSectionInvertedLogo {
+	margin-bottom: 50px;
+}
+
+.footerSecondSectionIcon {
+	padding: 20px;
+	padding-left: 0;
+	padding-bottom: 0;
+}
+
+.footerSecondSectionSpanContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.footerSecondSectionSpan {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 10px;
+}
+
+.footerSectionInbox {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-around;
+	height: auto;
+}
+
+.inboxForm {
+	margin-bottom: 50px;
+}
+
+.inboxInput {
+	width: 250px;
+	height: 50px;
+	color: #f3603b;
+	background-color: #ffffff;
+	border: none;
+	border-radius: 40px;
+	padding-left: 10px;
+	margin-right: 10px;
+}
+
+.goButton {
+	width: 75px;
+	height: 50px;
+	color: #ffffff;
+	background-color: #f3603b;
+	border: none;
+	border-radius: 40px;
+}
+
+.copyrightSpan {
+	color: #8c8c94;
 }
