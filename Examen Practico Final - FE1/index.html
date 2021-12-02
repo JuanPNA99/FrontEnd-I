@@ -11,12 +11,19 @@
 			href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+			integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
 		<header>
 			<img src="imagenes/logo.svg" alt="logo.svg" />
-			<nav>
+			<nav class="headerNavbar">
 				<ul class="headerUl">
 					<li class="headerLi">
 						<a class="headerUlA" href="#">Pricing</a>
@@ -36,6 +43,7 @@
 				</ul>
 			</nav>
 			<button class="getStartedButton">Get Started</button>
+			<i class="hamburguerIcon fas fa-bars fa-2x"></i>
 		</header>
 		<main>
 			<section class="SectionOneTwo">
@@ -52,7 +60,11 @@
 					</p>
 					<button class="getStartedButton">Get Started</button>
 				</div>
-				<img src="imagenes/illustration-intro.svg" alt="" />
+				<img
+					class="dataImage"
+					src="imagenes/illustration-intro.svg"
+					alt=""
+				/>
 			</section>
 			<section class="SectionOneTwo">
 				<div>
@@ -60,7 +72,7 @@
 						What´s different about <br />
 						Manage?
 					</h2>
-					<p>
+					<p class="mainLeftTexts">
 						Manage provides all the functionality your <br />
 						teas needs, without the complexity. Our <br />
 						software is tailor-made for modern digital <br />
@@ -71,7 +83,7 @@
 					<h3 class="littleTitles littleTitlesOne">
 						Track company-wide progress
 					</h3>
-					<p class="rightText">
+					<p class="rightTexts">
 						See how your day-to-day tasks fit into the wider vision.
 						<br />
 						Go from tracking progress at the milestone level all the
@@ -84,7 +96,7 @@
 					<h3 class="littleTitles littleTitlesTwo">
 						Advance built-in reports
 					</h3>
-					<p class="rightText">
+					<p class="rightTexts">
 						Set internal delivery estimates and track progress
 						toward <br />
 						company goals. Our customisable dashboard helps you
@@ -97,10 +109,10 @@
 					<h3 class="littleTitles littleTitlesThree">
 						Everything you need in one place
 					</h3>
-					<p class="rightText">
+					<p class="rightTexts">
 						Stop jumping from one service to another to <br />
 						communicate, store files, track tasks and share
-						<br />
+						<br class="righttextBr" />
 						documents. Manage offers an all-in-one team <br />
 						productivity solution.
 					</p>
@@ -115,7 +127,7 @@
 							src="imagenes/avatar-anisha.png"
 							alt="user.png"
 						/>
-						<h4 class="cardUserName">Ali Bravo</h4>
+						<h4 class="cardUserName">Anisha Li</h4>
 						<p class="cardText">
 							“Manage has supercharged our team´s workflow.
 							<br />
@@ -144,7 +156,7 @@
 							src="imagenes/avatar-richard.png"
 							alt="user.png"
 						/>
-						<h4 class="cardUserName">Ali Bravo</h4>
+						<h4 class="cardUserName">Richard Watts</h4>
 						<p class="cardText">
 							“Manage allows us to provide structure and <br />
 							process. It keeps us organized and focused. I can´t
@@ -153,6 +165,11 @@
 						</p>
 					</div>
 				</div>
+				<img
+					class="CarruselPng"
+					src="imagenes/carrusel.png"
+					alt="csrrusel.png"
+				/>
 				<button class="getStartedButton">Get Started</button>
 			</section>
 		</main>
@@ -204,45 +221,64 @@
 						/></a>
 					</div>
 				</div>
-				<div class="footerSecondSectionSpanContainer">
-					<a href="#" class="footerSecondSectionSpan"
-						><span>Home</span></a
-					>
-					<a href="#" class="footerSecondSectionSpan"
-						><span>Pricing</span></a
-					>
-					<a href="#" class="footerSecondSectionSpan"
-						><span>Products</span></a
-					>
-					<a href="#" class="footerSecondSectionSpan"
-						><span>About Us</span></a
-					>
-				</div>
-				<div class="footerSecondSectionSpanContainer">
-					<a href="#" class="footerSecondSectionSpan"
-						><span>Careers</span></a
-					>
-					<a href="#" class="footerSecondSectionSpan"
-						><span>Community</span></a
-					>
-					<a href="#" class="footerSecondSectionSpan"
-						><span>Privacy Policy</span></a
-					>
+				<div class="navsContainer">
+					<nav class="footerSecondSectionNav">
+						<ul class="footerSecondSectionNavUl">
+							<li class="footerSecondSectionNavLi">
+								<a href="#" class="footerSecondSectionNavA"
+									>Home</a
+								>
+							</li>
+							<li class="footerSecondSectionNavLi">
+								<a href="#" class="footerSecondSectionNavA"
+									>Pricing</a
+								>
+							</li>
+							<li class="footerSecondSectionNavLi">
+								<a href="#" class="footerSecondSectionNavA"
+									>Products</a
+								>
+							</li>
+							<li class="footerSecondSectionNavLi">
+								<a href="#" class="footerSecondSectionNavA"
+									>About Us</a
+								>
+							</li>
+						</ul>
+					</nav>
+					<nav class="footerSecondSectionNav">
+						<ul class="footerSecondSectionNavUl">
+							<li class="footerSecondSectionNavLi">
+								<a href="#" class="footerSecondSectionNavA"
+									>Careers</a
+								>
+							</li>
+							<li class="footerSecondSectionNavLi">
+								<a href="#" class="footerSecondSectionNavA"
+									>Community</a
+								>
+							</li>
+							<li class="footerSecondSectionNavLi">
+								<a href="#" class="footerSecondSectionNavA"
+									>Privacy Policy</a
+								>
+							</li>
+						</ul>
+					</nav>
 				</div>
 				<div class="footerSectionInbox">
 					<form class="inboxForm" action="">
 						<input
 							class="inboxInput"
-							type="text"
+							type="email"
 							placeholder="Update in your inbox..."
 						/>
 						<button class="goButton">Go</button>
 					</form>
-					<div>
-						<span class="copyrightSpan"
-							>Copyright 2020. All Rights Reserved</span
-						>
-					</div>
+
+					<span class="copyrightSpan"
+						>Copyright 2020. All Rights Reserved</span
+					>
 				</div>
 			</section>
 		</footer>
