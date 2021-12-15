@@ -1,0 +1,32 @@
+/* .SCSS */
+
+
+/* VARIABLES */
+
+$colorDeFondo: rgb(66, 22, 107);
+
+/* AGREGAR VARIABLE DE MARGIN */
+
+
+/*NESTING */
+
+header {
+    height: 400px;
+    margin: 50px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    p {
+        background-color: $colorDeFondo;
+    }
+}
+
+.menu {
+    background-color: rgb(3, 93, 3);
+    &-secundario {
+        background-color: rgb(3, 93, 3)
+    }
+}
+
+
+/* NESTEAR ARTICLE */

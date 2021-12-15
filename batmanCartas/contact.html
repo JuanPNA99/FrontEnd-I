@@ -23,9 +23,9 @@
 				</h1>
 			</div>
 		</header>
-		<main class="registerMain">
+		<main class="contactMain">
 			<form action="" class="registerForm">
-				<legend class="registerLegend">Registro</legend>
+				<legend class="registerLegend">Contacto</legend>
 				<label for="Nombre"></label>
 				<input
 					class="registerInput"
@@ -40,32 +40,20 @@
 					name="email"
 					placeholder="Correo Electrónico"
 				/>
-				<label for="password"></label>
-				<input
-					class="registerInput"
-					type="password"
-					name="password"
-					placeholder="Contraseña"
-				/>
-				<select
-					name="pais"
-					id="pais"
-					aria-placeholder="Pais"
-					class="registerInput"
-				>
-					<option value="" disabled selected>País</option>
-					<option name="pais" value="colombia">Colombia</option>
-				</select>
+				<label for="contact"></label>
+				<textarea
+					name="contact"
+					id="contact"
+					cols="30"
+					rows="12"
+					class="contactTextArea"
+				></textarea>
 				<div class="registerButtonsContainer">
 					<button class="resetButton" type="reset">Resetear</button>
 					<button class="registerButton" type="submit">
 						Registrar
 					</button>
 				</div>
-				<span class="registerSpan"
-					>¿Ya tienes una cuenta? &nbsp;
-					<a href="login.html">Ingresár</a></span
-				>
 			</form>
 		</main>
 		<footer class="footer">

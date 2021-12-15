@@ -1,0 +1,23 @@
+/* .SCSS */
+/* VARIABLES */
+/* AGREGAR VARIABLE DE MARGIN */
+/*NESTING */
+header {
+  height: 400px;
+  margin: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+header p {
+  background-color: #42166b;
+}
+
+.menu {
+  background-color: #035d03;
+}
+.menu-secundario {
+  background-color: #035d03;
+}
+
+/* NESTEAR ARTICLE *//*# sourceMappingURL=stylepiola.css.map */

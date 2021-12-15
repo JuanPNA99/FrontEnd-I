@@ -23,22 +23,15 @@
 				</h1>
 			</div>
 		</header>
-		<main class="registerMain">
+		<main class="loginMain">
 			<form action="" class="registerForm">
-				<legend class="registerLegend">Registro</legend>
-				<label for="Nombre"></label>
+				<legend class="registerLegend">Login</legend>
+				<label for="usuario"></label>
 				<input
 					class="registerInput"
 					type="text"
-					name="nombre"
-					placeholder="Nombre y apellido"
-				/>
-				<label for="email"></label>
-				<input
-					class="registerInput"
-					type="emial"
-					name="email"
-					placeholder="Correo Electrónico"
+					name="usuario"
+					placeholder="Usuario"
 				/>
 				<label for="password"></label>
 				<input
@@ -47,24 +40,12 @@
 					name="password"
 					placeholder="Contraseña"
 				/>
-				<select
-					name="pais"
-					id="pais"
-					aria-placeholder="Pais"
-					class="registerInput"
-				>
-					<option value="" disabled selected>País</option>
-					<option name="pais" value="colombia">Colombia</option>
-				</select>
 				<div class="registerButtonsContainer">
-					<button class="resetButton" type="reset">Resetear</button>
-					<button class="registerButton" type="submit">
-						Registrar
-					</button>
+					<button class="loginButton" type="submit">Entrar</button>
 				</div>
 				<span class="registerSpan"
-					>¿Ya tienes una cuenta? &nbsp;
-					<a href="login.html">Ingresár</a></span
+					>¿No tienes una cuenta? &nbsp;
+					<a href="register.html">Registrarme</a></span
 				>
 			</form>
 		</main>

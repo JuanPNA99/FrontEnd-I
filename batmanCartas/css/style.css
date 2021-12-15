@@ -2,23 +2,29 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	font-weight: 100;
 }
 
 header {
 	top: 0;
-	position: sticky;
-	/* box-shadow: 2px 2px 5px #999; */
+	box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .headerTop {
+	display: flex;
+	align-items: center;
 	width: 100%;
-	height: 38px;
+	height: 20px;
 	margin: 0;
 	padding-left: 10px;
 	background-color: #1cd1b0;
 }
 
 .headerBottom {
+	display: flex;
 	width: 100%;
 	height: 101px;
 	margin: 0;
@@ -30,8 +36,9 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
+	align-items: center;
 	width: 100%;
-	height: auto;
+	height: 30px;
 	background-color: #001d2d;
 }
 
@@ -45,31 +52,51 @@ header {
 	margin-left: 2vw;
 	margin-right: 2vw;
 	color: white;
+	font-weight: none;
 }
 
-.headerTitleTop {
-	padding-top: 10px;
+.nombreTiendaA {
+	text-decoration: none;
+	color: white;
 }
 
 .headerTitleBottom {
+	display: flex;
+	align-self: flex-end;
+	color: white;
 	padding-top: 28px;
-	padding-bottom: 28px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+}
+
+main {
+	display: flex;
 }
 
 .cardsContainer {
+	display: flex;
+	position: relative;
+	justify-content: center;
 	width: 100%;
-	position: absolute;
-	margin-top: 200px;
-	margin-bottom: 200px;
+	padding: 200px 0;
 }
 
 .card {
-	position: relative;
 	width: 300px;
-	height: 529px;
+	height: 550px;
+	position: relative;
+	margin: 0px 35px;
 	background-color: #f3f3f3;
 	border-radius: 5px;
-	box-shadow: 4px 2px -2px #999;
+	box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.hearth {
+	position: absolute;
+	left: 20px;
+	top: 15px;
 }
 
 .cardImage {
@@ -90,16 +117,258 @@ header {
 }
 
 .cardTitle {
-	font-family: Arial, Helvetica, sans-serif;
 	padding: 10px;
 	text-align: center;
+	font-weight: 600;
 }
 
 .cardP {
-	font-family: Arial, Helvetica, sans-serif;
 	padding: 10px;
 }
 
 .buttonCard {
+	color: white;
+	width: 40%;
+	height: 100px;
+	align-self: center;
+	border: none;
 	background-color: #00669f;
+}
+
+.buttonCard:hover {
+	cursor: pointer;
+}
+
+.plusButton {
+	display: flex;
+	align-self: center;
+	justify-self: flex-end;
+	position: absolute;
+	right: 50px;
+	height: 90px;
+}
+
+.plusButton:hover {
+	cursor: pointer;
+}
+
+.footer {
+	display: flex;
+	background-color: #00669f;
+	height: 50px;
+	align-items: center;
+}
+
+.footerSpan {
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+/* Registro */
+.registerMain {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding-top: 100px;
+	padding-bottom: 215px;
+}
+
+.registerForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 30%;
+	height: auto;
+}
+.registerLegend {
+	color: #333333;
+	font-size: 3.5rem;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+
+.registerInput {
+	height: 40px;
+	border: #333333 solid 0.13rem;
+	margin: 10px 0px;
+	padding-left: 10px;
+}
+
+.registerInput::placeholder {
+	color: black;
+}
+
+.registerButtonsContainer {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.resetButton {
+	display: flex;
+	width: 50%;
+	margin: 10px;
+	margin-left: 0px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	border: none;
+	color: white;
+	background-color: #888888;
+	font-size: 1.2rem;
+}
+
+.resetButton:hover {
+	cursor: pointer;
+}
+
+.registerButton {
+	display: flex;
+	width: 50%;
+	margin: 10px;
+	margin-right: 0px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	border: none;
+	color: black;
+	background-color: #1cd1b0;
+	font-size: 1.2rem;
+}
+
+.registerButton:hover {
+	cursor: pointer;
+}
+
+.registerSpan {
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Login */
+
+.loginMain {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding-top: 100px;
+	padding-bottom: 330px;
+}
+
+.loginButton {
+	display: flex;
+	width: 100%;
+	margin: 10px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	border: none;
+	color: black;
+	background-color: #1cd1b0;
+	font-size: 1.2rem;
+}
+
+.loginButton:hover {
+	cursor: pointer;
+}
+
+/* contact */
+
+.contactMain {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding-top: 100px;
+	padding-bottom: 170px;
+}
+
+.contactTextArea {
+	border: #333333 solid 0.13rem;
+}
+
+/* Harley */
+
+.harleyHeaderTitleBottom {
+	display: flex;
+	align-self: center;
+	color: white;
+	margin-left: 10px;
+	font-size: 3rem;
+}
+
+.cardsContainerHarley {
+	background-image: url('C:/Users/user/Desktop/Escritorio/CertifiedTechDeveloper/FrontEnd 1/mochila/batmanCartas/src/bg_colors.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	width: 100%;
+	padding: 200px 0;
+}
+
+.harleyCard {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 500px;
+	height: 470px;
+	margin: 0px 35px;
+	background-color: #f3f3f3;
+	border-radius: 25px;
+}
+
+.harleyCardImage {
+	position: relative;
+	left: 38%;
+	top: -13%;
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+}
+
+.harleyHearth {
+	position: absolute;
+	left: 20px;
+	top: 100px;
+}
+
+.harleyCardTitle {
+	padding: 10px;
+	text-align: center;
+	font-weight: 600;
+	color: #2c0187;
+}
+
+.gunsContainer {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+
+.guns {
+	margin: 0px 15px;
+}
+
+.harleyButtonCard {
+	color: white;
+	width: 100%;
+	height: 75px;
+	align-self: center;
+	border: none;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	background-color: #2c0187;
+	font-size: 1.2rem;
+}
+
+.harleyA {
+	text-decoration: none;
+	color: white;
 }
